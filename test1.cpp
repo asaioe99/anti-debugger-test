@@ -19,7 +19,6 @@ BOOL findProcess()
 	PROCESSENTRY32  pe = {sizeof(PROCESSENTRY32)};
 	HANDLE          ss = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, 0);
 	BOOL            rslt;
-	//CHAR            fname[1024];
 
 	for (rslt = Process32First(ss, &pe); rslt == TRUE; rslt = Process32Next(ss, &pe)) {
 		if(!_stricmp(pe.szExeFile, "Firefox.exe")) {
@@ -121,22 +120,20 @@ BOOL CALLBACK findClassName(HWND hwnd, LPARAM lParam)
 	int cnt;
 	char buff[1024];
 	char *classNameList[] = { (char *)"PROCMON_WINDOW_CLASS",
-		                      (char *)"OllyDbg",
-							  (char *)"TIdaWindow",
-							  (char *)"WinDbgFrameClass",
-							  (char *)"FilemonClass",
-							  (char *)"ID",
-							  (char *)"RegmonClass",
-							  (char *)"PROCEXPL",
-							  (char *)"TCPViewClass",
-							  (char *)"SmartSniff",
-							  (char *)"Autoruns",
-							  (char *)"CNetmonMainFrame",
-							  (char *)"TFormFileAlyzer2",
-							  (char *)"ProcessHacker"
+		(char *)"OllyDbg",(char *)"TIdaWindow",
+		(char *)"WinDbgFrameClass",
+		(char *)"FilemonClass",
+		(char *)"ID",
+		(char *)"RegmonClass",
+		(char *)"PROCEXPL",
+		(char *)"TCPViewClass",
+		(char *)"SmartSniff",
+		(char *)"Autoruns",
+		(char *)"CNetmonMainFrame",
+		(char *)"TFormFileAlyzer2",
+		(char *)"ProcessHacker"
 	}; //add more class name
 	if (GetClassName(hwnd, buff, sizeof(buff))) {
-		//printf("%s\n", buff);
 		for (cnt = 0; cnt < sizeof(classNameList) / sizeof(wchar_t *); cnt++) {
 			if (!_stricmp(classNameList[cnt], buff)) {
 				return TRUE;
