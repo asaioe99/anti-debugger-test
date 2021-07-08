@@ -1,5 +1,5 @@
 # anti-debugger-test
-使用の際は適切にパックしてください。windows defenderに検知されます。
+使用の際は適切にパックしてください。そのままではwindows defenderに検知されます。
 https://github.com/upx/upx/releases/tag/v3.96 により、
 
 upx test.exe -9 -k
