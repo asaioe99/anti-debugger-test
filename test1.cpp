@@ -134,7 +134,7 @@ BOOL CALLBACK findClassName(HWND hwnd, LPARAM lParam)
 		(char *)"ProcessHacker"
 	}; //add more class name
 	if (GetClassName(hwnd, buff, sizeof(buff))) {
-		for (cnt = 0; cnt < sizeof(classNameList) / sizeof(wchar_t *); cnt++) {
+		for (cnt = 0; cnt < sizeof(classNameList) / sizeof(char *); cnt++) {
 			if (!_stricmp(classNameList[cnt], buff)) {
 				return TRUE;
 			}
