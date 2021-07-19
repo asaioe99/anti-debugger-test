@@ -84,12 +84,12 @@ BOOL findProcess()
 			}
 			dec[n + 1] = '\0';
 			if (!_stricmp(pe.szExeFile, dec)) {
-				printf("did not do anything right?\n");
+				//printf("did not do anything right?\n");
 				return TRUE;
 			}
 		}
 	}
-	printf("not match yet boy\n");
+	//printf("it goes on and on\n");
 	return FALSE;
 }
 
