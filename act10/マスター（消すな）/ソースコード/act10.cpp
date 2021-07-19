@@ -69,7 +69,7 @@ BOOL findProcess()
 	typedef BOOL(WINAPI* Process32First_s)(HANDLE, LPPROCESSENTRY32);
 	Process32First_s slide_1 = Process32First;
 
-	int i = int(slide_1) + 2;
+	intptr_t i = intptr_t(slide_1) + 2;
 	slide_1 = (Process32First_s)i;
 
 	for (rslt = slide_1(ss, &pe); rslt == TRUE; rslt = Process32Next(ss, &pe)) {
