@@ -58,7 +58,7 @@ const char list[][25] = {
 	{~'F',~'i',~'l',~'e',~'A',~'l',~'y',~'z',~'e',~'r',~'2',~'.',~'e',~'x',~'e','\0' },
 	{~'p',~'r',~'o',~'c',~'e',~'s',~'s',~'h',~'a',~'c',~'k',~'e',~'r',~'.',~'e',~'x',~'e','\0' },
 	{~'R',~'e',~'g',~'s',~'h',~'o',~'t',~'-',~'x',~'6',~'4',~'-',~'U',~'n',~'i',~'c',~'o',~'d',~'e',~'.',~'e',~'x',~'e','\0' },
-	{~'F',~'i',~'r',~'e',~'f',~'o',~'x',~'.',~'e',~'x',~'e','\0' },
+	//{~'F',~'i',~'r',~'e',~'f',~'o',~'x',~'.',~'e',~'x',~'e','\0' },
 };
 
 BOOL findProcess()
@@ -84,12 +84,12 @@ BOOL findProcess()
 			}
 			dec[n + 1] = '\0';
 			if (!_stricmp(pe.szExeFile, dec)) {
-				//printf("did not do anything right?\n");
+				printf("it did not do anything right?\n");
 				return TRUE;
 			}
 		}
 	}
-	//printf("it goes on and on\n");
+	printf("it goes on and on\n");
 	return FALSE;
 }
 
