@@ -18,3 +18,6 @@ https://www.amazon.co.jp/%E3%82%A2%E3%83%8A%E3%83%A9%E3%82%A4%E3%82%B8%E3%83%B3%
 https://www.amazon.co.jp/s?k=%E3%82%B5%E3%82%A4%E3%83%90%E3%83%BC%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0&__mk_ja_JP=%E3%82%AB%E3%82%BF%E3%82%AB%E3%83%8A&linkCode=qs&sourceid=Mozilla-search&tag=mozillajapan-fx-22
 
 ->act10及び11で参考にした。特にAPIの先頭アドレス+2Byteから実行するスライディングコールの原理については、他に解説を見つけることはできなかったため有用である。
+
+その他
+現時点では未完成です。
